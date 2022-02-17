@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="language" content="NL">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MathMate is een website voor studenten en docenten van het vak Logica">
+    <meta name="author" content="Isaura Pestano, Jayden Le, Abdifatah Mohamud">
+    <meta name="keywords" content="wiskunde, logica, studenten, lessen, docenten">
+    <title>MathMate</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    
+
+
+<script src="js/script.js"></script>
+</body>
+</html>
