@@ -8,11 +8,11 @@
     <meta name="author" content="Isaura Pestano, Jayden Le, Abdifatah Mohamud">
     <meta name="keywords" content="wiskunde, logica, studenten, lessen, docenten">
     <title>MathMate</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/337c18a6ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
     <header>
@@ -22,7 +22,7 @@
             </article>
 
             <article class="dropdown-menu">
-                    <button href="index.html" onclick="myFunction()" class="dropbtn">Berekeningen</button>
+                    <button href="index.html" onclick="myFunction()" class="dropbtn">Menu</button>
                     <div class="dropdown-content" id="myDropdown">
                         <a href="index.html">Home</a>
                         <a href="presentatiepagina.html">Presentatiepagina</a>
@@ -60,59 +60,59 @@
         <section class="basisberekeningen">
         <h1>Basisberekeningen</h1>
             <section class="basis">
-                <article class="optellen">
+                <article class="som">
                     <p class="naam-berekening">Optellen</p>
-                    <input type="number" name="num1" id="num1-optellen">+<input type="number" name="num2" id="num2-optellen">
-                    <button id="optellen">Optellen</button>
+                    <input type="number" name="num1" id="num1-optellen"><img src="images/plus.png" alt="Plus operator"><input type="number" name="num2" id="num2-optellen">
+                    <button id="optellen" class="button">Optellen</button>
                     <br><span id="answer1"></span>
                 </article>
 
-                <article class="aftrekken">
+                <article class="som">
                     <p class="naam-berekening">Aftrekken</p>
-                    <input type="number" name="num1" id="num1-aftrekken">-<input type="number" name="num2" id="num2-aftrekken">
-                    <button id="aftrekken">Aftrekken</button>
+                    <input type="number" name="num1" id="num1-aftrekken"><img src="images/min.png" alt="Min operator"><input type="number" name="num2" id="num2-aftrekken">
+                    <button id="aftrekken" class="button">Aftrekken</button>
                     <br><span id="answer2"></span>
                 </article>
 
-                <article class="vermenigvuldigen">
+                <article class="som">
                     <p class="naam-berekening">Vermenigvuldigen</p>
-                    <input type="number" name="num1" id="num1-vermenigvuldigen">x<input type="number" name="num2" id="num2-vermenigvuldigen">
-                    <button id="vermenigvuldigen">vermenigvuldigen</button>
+                    <input type="number" name="num1" id="num1-vermenigvuldigen"><img src="images/keer.png" alt="Keer operator"><input type="number" name="num2" id="num2-vermenigvuldigen">
+                    <button id="vermenigvuldigen" class="button">vermenigvuldigen</button>
                     <br><span id="answer3"></span>
                 </article>
 
-                <article class="delen">
+                <article class="som">
                     <p class="naam-berekening">Delen</p>
-                    <input type="number" name="num1" id="num1-delen">:<input type="number" name="num2" id="num2-delen">
-                    <button id="delen">Delen</button>
+                    <input type="number" name="num1" id="num1-delen"><img src="images/delen.png" alt="Delen operator"><input type="number" name="num2" id="num2-delen">
+                    <button id="delen" class="button">Delen</button>
                     <br><span id="answer4"></span>
                 </article>
 
-                <article class="macht">
+                <article class="som">
                     <p class="naam-berekening">Machtsverheffen</p>
                     <input type="number" name="num1" id="num1-macht"> <input type="number" name="num2" id="num2-macht">
-                    <button id="macht">Macht</button>
+                    <button id="macht" class="button">Macht</button>
                     <br><span id="answer5"></span>
                 </article>
 
-                <article class="percentage">
+                <article class="som">
                     <p class="naam-berekening">Percentage</p>
-                    <input type="number" name="num1" id="num1-percentage">%<input type="number" name="num2" id="num2-percentage">
-                    <button id="percentage">Percentage</button>
+                    <input type="number" name="num1" id="num1-percentage"><img src="images/porcentage.png" alt="Porcentage operator"><input type="number" name="num2" id="num2-percentage">
+                    <button id="percentage" class="button">Percentage</button>
                     <br><span id="answer6"></span>
                 </article>
 
-                <article class="restwaarde">
+                <article class="som">
                     <p class="naam-berekening">Restwaarde</p>
                     <input type="number" name="num1" id="num1-restwaarde"> <input type="number" name="num2" id="num2-restwaarde">
-                    <button id="restwaarde">Rest</button>
+                    <button id="restwaarde" class="button">Rest</button>
                     <br><span id="answer7"></span>
                 </article>
 
-                <article class="even">
+                <article class="som">
                     <p class="naam-berekening">Even of oneven</p>
                     <input type="number" name="num1" id="num1-even">
-                    <button id="even">Controleren</button>
+                    <button id="even" class="button">Controleren</button>
                     <br><span id="answer8"></span>
                 </article>
             </section>
