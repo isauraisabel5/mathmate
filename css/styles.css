@@ -1,14 +1,239 @@
- /* Dropdown Button */
- .dropbtn {
-    background-color: #04AA6D;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
+ * {
+     padding: 0;
+     margin: 0;
+ }
+
+ body {
+     width: 100vw;
+     margin: 0 auto;
+     font-family: 'Poppins', sans-serif;
+ }
+
+ /* Begin Mobile version nav */
+
+ .top-menu-mobile button{
+    color: #EF913C;
+    font-size: 2rem;
+    float: right;
+    text-decoration: none;
+    background-color: none;
     border: none;
+}
+
+.top-menu-mobile {
+    display: block;
+    width: 80vw;
+    margin: auto;
+}
+
+.top-menu-desktop {
+    display: none;
+}
+ 
+ .logo img {
+     width: 25vw;
+ }
+
+ a {
+     text-decoration: none;
+ }
+
+ ul {
+     list-style: none;
+ } 
+
+ .top-menu-mobile {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+  #flyoutMenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F0CD11;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate3d(100vw, 0, 0);
+    transition: transform .3s cubic-bezier(0, .52, 0, 1);
+    overflow: scroll;
+    z-index: 1000;
+    overflow: scroll;
+}
+
+#flyoutMenu li{
+    padding: 10px;
+    list-style-type: none;
+}
+
+#flyoutMenu ul{
+    text-align: center;
+    padding-top: 30vw;
+}
+
+#flyoutMenu a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+
+#flyoutMenu a:active{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #EF913C;
+}
+
+#flyoutMenu a:hover{
+    text-decoration: none;
+    font-size: 2rem;
+    color: #EF913C;
+}
+
+#flyoutMenu i{
+    color: white; 
+    font-size: 2rem ;
+    border: none;
+    padding: 30px;
+    position: absolute;
+    right: 0vw;
+}
+
+#flyoutMenu button{
+    border: none;
+    float: right;
+}
+
+#flyoutMenu.show {
+    transform: translate3d(0vw, 0, 0);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+ /* Einde Mobile version nav */
+
+ /* Begin main area */
+
+ main {
+    background-color: #F0CD11;
+    width: 100vw;
+}
+
+.mathmate-info {
+    width: 60vw;
+    margin: auto;
+    padding: 70px;
+}
+
+.illustratie img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.text-homepage {
+    color: #393939;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.text-homepage h1 {
+    font-size: 3rem;
+}
+
+.text-homepage p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+.text-homepage span {
+    color: #EF913C;
+    font-weight: 700;
+}
+
+/* Einde main area */
+
+/* Begin footer */
+footer {
+    bottom:0;
+    width:100vw;
+    background-color: #EF913C;
+    min-height: 215px;
+}
+
+.footer {
+    width: 60vw;
+    margin: auto;
+    padding: 40px;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+}
+
+.icons-footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.icons-footer img {
+    padding: 7px;
+}
+
+/* einde footer */
+
+
+
+
+
+@media only screen and (min-width: 809.9px){
+
+    /* Begin Desktop version nav */
+
+    .top-menu-mobile {
+        display:none;
+    }
+
+    .top-menu-desktop {
+        display: block;
+        width: 80vw;
+        margin: auto;
+    }
+
+    .top-menu-desktop {
+        display: flex;
+       justify-content: space-between;
+       margin-top: 30px;
+       align-items: center;
+       margin-bottom: 30px;
+    }
+    
+    
+    /* Dropdown Button */
+    .dropbtn {
+    background-color: #EF913C;
+    color: white;
+    padding: 13px 40px;
+    font-size: 1.3rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #F0CD11;
+
   }
   
   /* The container <div> - needed to position the dropdown content */
-  .dropdown-menu {
+  .dropdown {
     position: relative;
     display: inline-block;
   }
@@ -17,25 +242,84 @@
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #EF913C;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
+
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
+    color: white;
+    padding: 12px 40px;
     text-decoration: none;
     display: block;
+    text-transform: uppercase;
+    font-weight: 700;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {background-color: #F0CD11;}
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+  .logo img {
+    width: 15vw;
+    }
+    /* Einde Desktop version nav */
+    
+    /* Begin main area */
+
+    .mathmate-info {
+        display: flex;
+        flex-direction: row;
+        padding: 50px;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .illustratie {
+        flex: 1;
+        padding-right: 40px;
+    }
+
+    .illustratie img {
+        width: 100%;
+    }
+
+    .text-homepage {
+    text-align: left;
+    flex: 1;
+    }
+
+
+    /* Einde main area */
+
+    
+    /* Begin footer */
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .copyright {
+        text-align: left;
+        width: 46vw;
+    }
+
+    .icons-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons-footer img {
+        padding: 7px;
+    }
+
+    /* einde footer */
+
+}

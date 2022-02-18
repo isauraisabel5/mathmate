@@ -9,34 +9,79 @@
     <meta name="keywords" content="wiskunde, logica, studenten, lessen, docenten">
     <title>MathMate</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/337c18a6ca.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <header>
+        <section class="top-menu-desktop">
+            <article class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Logo MathMate"></a>
+            </article>
 
-    <section class="dropdown-menu">
-            <a href="index.html" class="dropbtn">Dropdown</a>
-            <div class="dropdown-content">
-                <a href="index.html">Home</a>
-                <a href="presentatiepagina.html">Presentatiepagina</a>
-                <a href="basisberekeningen.html">Basisberekeningen</a>
-                <a href="eenvoudigreeksen.html">Eenvoudigreeksen</a>
-                <a href="complexereeksen.html">Complexe Reeksen</a>
-                <a href="omrekenen.html">Omrekenen</a>
-                <a href="contact.html">Contact</a>
-            </div>
-    </section>
-    
-    <section id="flyoutMenu">
-        <button id="Kruis"><i class="fas fa-times"></i></button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="presentatiepagina.html">Presentatiepagina</a></li>
-            <li><a href="basisberekeningen.html">Basisberekeningen</a></li>
-            <li><a href="eenvoudigreeksen.html">Eenvoudigreeksen</a></li>
-            <li><a href="complexereeksen.html">Complexe Reeksen</a></li>
-            <li><a href="omrekenen.html">Omrekenen</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </section>
+            <article class="dropdown-menu">
+                    <button href="index.html" onclick="myFunction()" class="dropbtn">Berekeningen</button>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="presentatiepagina.html">Presentatiepagina</a>
+                        <a href="basisberekeningen.html">Basisberekeningen</a>
+                        <a href="eenvoudigreeksen.html">Eenvoudig Reeksen</a>
+                        <a href="complexereeksen.html">Complexe Reeksen</a>
+                        <a href="omrekenen.html">Omrekenen</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </article>
+            </section>
+        
+        <section class="top-menu-mobile">
+            <article class="logo">
+                <img src="images/logo.png" alt="Logo MathMate">
+                <button id="Hamburger"><i class="fas fa-bars"></i></button>
+            </article>
+        
+            <article id="flyoutMenu">
+                <button id="Kruis"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="presentatiepagina.html">Presentatiepagina</a></li>
+                    <li><a href="basisberekeningen.html">Basisberekeningen</a></li>
+                    <li><a href="eenvoudigreeksen.html">Eenvoudig Reeksen</a></li>
+                    <li><a href="complexereeksen.html">Complexe Reeksen</a></li>
+                    <li><a href="omrekenen.html">Omrekenen</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </article>
+        </section>
+    </header>
+
+    <main>
+        <section class="mathmate-info">
+            <article class="illustratie">
+                <img src="images/illustratie homepage.png" alt="Illustratie Wiskunde">
+            </article>
+            <article class="text-homepage">
+                <h1>MathMate</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam aliquet est velit, id interdum felis dignissim eu. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur semper nibh id augue posuere.
+                        <br><br>
+                    Aenean quis arcu orci. Morbi auctor ultricies ante. Mauris lorem nulla, semper eu condimentum et, iaculis vitae dui. Fusce fermentum, est sit amet efficitur auctor, ligula risus lacinia nisl, ac finibus lorem sapien id mi. Proin rhoncus sodales mattis. <span>Vivamus hendrerit ex tellus, in dictum dolor aliquam sed. Integer ornare lobortis nulla nec semper</span></p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer">
+            <article class="copyright">
+                <p>This website and its content is copyright of MathMate© 2022.
+                    All rights reserved.</p>
+            </article>
+            <article class="icons-footer">
+                <a href="#"><img src="images/youtube.png" alt="Youtube"></a>
+                <a href="#"><img src="images/mail.png" alt="Mail"></a>
+                <a href="#"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+            </article>
+        </section>
+    </footer>
 
 <script src="js/script.js"></script>
 </body>
