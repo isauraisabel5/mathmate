@@ -194,6 +194,10 @@ footer {
 
     /* Begin Desktop version nav */
 
+    body {
+        overflow-x: hidden;
+    }
+
     .top-menu-mobile {
         display:none;
     }
