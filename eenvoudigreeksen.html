@@ -13,6 +13,12 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet"> 
     <script src="https://kit.fontawesome.com/337c18a6ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
 </head>
 <body>
     <header>
@@ -24,6 +30,7 @@
             <article class="dropdown-menu">
                     <button href="index.html" onclick="myFunction()" class="dropbtn">Berekeningen</button>
                     <div class="dropdown-content" id="myDropdown">
+                        <a href="index.html">Home</a>
                         <a href="presentatiepagina.html">Presentatiepagina</a>
                         <a href="basisberekeningen.html">Basisberekeningen</a>
                         <a href="eenvoudigreeksen.html">Eenvoudig Reeksen</a>
@@ -74,5 +81,20 @@
     </footer>
 
 <script src="js/script.js"></script>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+    });
+</script>
 </body>
 </html>
