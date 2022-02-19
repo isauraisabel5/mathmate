@@ -254,6 +254,14 @@ input[type=number] {
 
 /* einde beginbasisberekeningen */
 
+/* begin presentatiepagina */
+
+.reveal {
+    width: 80vw;
+    height: 40vh;
+    margin: auto;
+}
+
 
 
 
