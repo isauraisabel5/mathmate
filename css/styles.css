@@ -201,6 +201,8 @@ main {
     text-align: center;
     text-transform: uppercase;
     padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 
 .naam-berekening {
@@ -220,11 +222,6 @@ main {
 .som span {
     margin-left: 10px;
     font-weight: 700;
-}
-
-.som img {
-    position: relative;
-    top: 5px;
 }
 
 
@@ -399,6 +396,9 @@ input[type=number] {
         gap: 1em;
         align-items: center;
       }
+      .basisberekeningen h1 {
+        font-size: 2rem;
+    }
 
     /* einde basisberekeningen */
 
