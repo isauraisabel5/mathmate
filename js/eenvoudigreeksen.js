@@ -1,12 +1,12 @@
 // tafels
 
 function printTafel() {
-    var num;
-    num = Number(document.getElementById("tafel-value").value);
-    for (var i = 1; i <= 10; i++) {
-        var answer = document.getElementById("answer9");
-        answer.innerHTML += num * i + "<br/>";
-    }
+  let num1 = document.getElementById("tafel-value1").value;
+  let num2 = document.getElementById("tafel-value2").value;
+  
+    for(let i = 1; i <= num2; i++){
+      document.getElementById('answer9').innerHTML += num1 * i + "<br>";
+    }     
   }
   
   document.getElementById('tafel').addEventListener('click', printTafel);
