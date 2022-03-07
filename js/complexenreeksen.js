@@ -1,6 +1,6 @@
 //Fibonacci
 function printFibonacci(){
-    const num = document.getElementById('fibonacci-value1');
+    const num = document.getElementById('fibonacci-value1').value;
     let n1 = 0, n2 = 1, nextTerm;
 
     document.getElementById('answer13').innerHTML = n1;
@@ -8,7 +8,6 @@ function printFibonacci(){
 
     nextTerm = n1 + n2;
 
-/*
     while(nextTerm <=  num){
         document.getElementById('answer13').innerHTML = nextTerm;
         
