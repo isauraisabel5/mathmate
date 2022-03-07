@@ -1,20 +1,33 @@
 //Fibonacci
 function printFibonacci(){
-    const num = document.getElementById('fibonacci-value1').value;
-    let n1 = 0, n2 = 1, nextTerm;
 
-    document.getElementById('answer13').innerHTML = n1;
-    document.getElementById('answer13').innerHTML = n2;
 
-    nextTerm = n1 + n2;
 
-    while(nextTerm <=  num){
-        document.getElementById('answer13').innerHTML = nextTerm;
-        
-        n1 = n2;
+    var num = parseInt(document.getElementById('fibonacci-value1').value);
+  
+    var n1 = 1;
+  
+    var n2 = 0;
+  
+    nextTerm=0;
+  
+  
+  
+    while (num >=  0){
+  
+     
+  
+        nextTerm= n1;
+  
+        n1 = n1+n2;
+  
         n2 = nextTerm;
-        nextTerm = n1 + n2;
+  
+        document.getElementById('answer13').innerHTML += (n2)+"<br>";
+  
+        num--;
+  
     }
-}
-
+  
+  }
 document.getElementById('fibonacci').addEventListener('click', printFibonacci);
