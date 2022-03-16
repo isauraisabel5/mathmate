@@ -37,3 +37,29 @@ function printPriemgetallen(){
 }
 
 document.getElementById('priemgetallen').addEventListener('click', printPriemgetallen);
+
+// perfect number
+
+function perfectNumber(){
+
+    let number = parseInt(document.getElementById('perfectnumber-value1').value);
+    var temp = 0;
+    var divisors = [];
+  
+    for(var i = 1; i <= number / 2; i++){
+         if(number % i === 0){
+            temp += i;
+            divisors.push(" " + i);
+          }
+    }
+  
+     if(temp === number && temp !== 0){
+            document.getElementById("answer16").innerHTML = divisors + " = " + number;
+        }
+  
+     else{
+            document.getElementById('answer16').innerHTML = "Het is geen perfecte nummer.";
+        }  
+  }
+
+document.getElementById('perfectnumber').addEventListener('click', perfectNumber);
