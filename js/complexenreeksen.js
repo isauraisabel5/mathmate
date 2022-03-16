@@ -30,7 +30,7 @@ function printPriemgetallen(){
         }
         if(flag) {
             let answer = i + "<br>";
-            document.getElementById('answer14').innerHTML = answer;
+            document.getElementById('answer14').innerHTML += answer;
             console.log(answer);
         }
     }
