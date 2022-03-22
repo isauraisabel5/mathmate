@@ -63,3 +63,21 @@ function perfectNumber(){
   }
 
 document.getElementById('perfectnumber').addEventListener('click', perfectNumber);
+
+//collatz conjuration
+
+function collatz(){
+    let num = parseInt(document.getElementById('collatz-value1').value);
+
+    while(num != 1){
+        console.log(num);
+
+        if(num % 2 == 0){
+            num = parseInt(num/2);
+        }else{
+            num = (num * 3) + 1;
+        }
+    }
+}
+
+document.getElementById('collatz').addEventListener('click', collatz);
