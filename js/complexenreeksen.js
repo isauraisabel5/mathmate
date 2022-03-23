@@ -69,14 +69,18 @@ document.getElementById('perfectnumber').addEventListener('click', perfectNumber
 function collatz(){
     let num = parseInt(document.getElementById('collatz-value1').value);
 
-    while(num != 1){
-        console.log(num);
 
-        if(num % 2 == 0){
+
+    while(num != 1){
+        if(num % 2 == 0){   
+            let answer = num / 2;
+            document.getElementById('answer17').innerHTML += num+"/2="+answer+"<br>"; 
             num = parseInt(num/2);
         }else{
+            let answer1 = num * 3 + 1 ; 
+            document.getElementById('answer17').innerHTML += num+"*3+1="+answer1+"<br>";
             num = (num * 3) + 1;
-        }
+        }        
     }
 }
 
