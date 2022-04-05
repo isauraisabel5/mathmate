@@ -257,6 +257,18 @@ input[type=number] {
 
 @media only screen and (min-width: 809.9px){
 
+    /* Begin Desktop version contact */
+    .contact {
+        width: 80vw;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contact article {
+        width: 30vw;
+    }
+    
     /* Begin Desktop version nav */
 
     body {
