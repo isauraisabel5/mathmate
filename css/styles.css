@@ -252,8 +252,96 @@ input[type=number] {
 
 /* einde beginbasisberekeningen */
 
+/* Begin Omrekenen */
 
+select {
+    border: none;
+    background-color: #EF913C;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+}
 
+/* Einde omrekenen */
+
+    /* Begin mobile version contact */
+.contact {
+    width: 90vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.contact-form h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.contact-text {
+    background-image: url('../images/Path.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.contact-text h1 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+input[type=text] {
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    width: 80vw;
+}
+
+input[type=email] {
+    padding: 10px;
+    border: none;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    width: 80vw;
+}
+
+.contact-form form label {
+    color: #EF913C;
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin-left: 30px;
+}
+
+input[type=submit] {
+    border: none;
+    background-color: #EF913C;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top:30px;
+    margin-left: 10px;
+}
+    
+input[type=submit]:hover {
+    background-color: #393939;
+    color:#F0CD11;
+}
+
+/* Einde contact */
 
 @media only screen and (min-width: 809.9px){
 
@@ -268,7 +356,84 @@ input[type=number] {
     .contact article {
         width: 30vw;
     }
+
+    .contact-form {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .contact-form h3 {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        width: 70%;
+    }
+
+    form {
+        margin-top: 20px;
+    }
     
+    .contact-text {
+        background-image: url('../images/Path.png');
+        background-repeat: no-repeat;
+        background-size: 80%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        background-position: 90px 40px;
+        text-align: right;
+    }
+
+    .contact-text h1 {
+        color: white;
+        font-size: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    input[type=text] {
+        padding: 10px;
+        border: none;
+        margin: 10px;
+        border-radius: 10px;
+        text-align: left;
+        width: 350px;
+    }
+
+    input[type=email] {
+        padding: 10px;
+        border: none;
+        margin: 10px;
+        border-radius: 10px;
+        text-align: left;
+        width: 350px;
+    }
+
+    .contact-form form label {
+        color: #EF913C;
+        font-weight: 700;
+        font-size: 0.8rem;
+        margin-left: 30px;
+    }
+
+    input[type=submit] {
+        border: none;
+        background-color: #EF913C;
+        padding: 10px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 10px;
+        margin-top:30px;
+        margin-left: 10px;
+    }
+        
+    input[type=submit]:hover {
+        background-color: #393939;
+        color:#F0CD11;
+    }
+
+    /* Einde contact */
+
     /* Begin Desktop version nav */
 
     body {
