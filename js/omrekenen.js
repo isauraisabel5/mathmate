@@ -121,3 +121,32 @@ document.getElementById("answer21").innerHTML = newText;
 }
 
  document.getElementById('morsenizer').addEventListener('click', convertToMorse);
+
+
+ // Talstelsels
+
+ function talstelsels(){
+    let select = document.getElementById('talstelsel-omrekenen');
+    var text = select.options[select.selectedIndex].text;
+    let select2 = document.getElementById('talstelsel-omrekenen1');
+    var text1 = select2.options[select.selectedIndex].text;
+    let input = document.getElementById('talstelsel-value1').value;
+
+    console.log(text)
+    console.log(text1)
+    
+    if(text == "Decimaal" && text1 == "Binary"){
+        let num = parseInt(input);
+        let hex = num.toString(2);
+        document.getElementById("answer18").innerHTML = hex;
+    }
+
+    if(text == "Binary" && text1 == "Decimaal"){
+        let num = parseInt(input);
+        let hex = parseInt(num, 2);
+        document.getElementById("answer18").innerHTML = hex;
+    }
+
+ }
+ 
+ document.getElementById('talstelsel').addEventListener('click', talstelsels);
